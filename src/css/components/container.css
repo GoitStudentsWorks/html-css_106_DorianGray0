@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
   outline: 1px solid teal;
 }
 
@@ -15,3 +16,27 @@
 }
 
 /** advartismant---------секція  */
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .title-big {
+    font-size: 12.8vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1144px;
+  }
+}
