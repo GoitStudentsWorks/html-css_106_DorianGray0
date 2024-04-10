@@ -1,0 +1,17 @@
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 1px solid teal;
+}
+
+.container-second {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: 1px solid teal;
+}
+
+/** advartismant---------секція  */
