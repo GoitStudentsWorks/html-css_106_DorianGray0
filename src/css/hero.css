@@ -5,11 +5,10 @@
 }
 .container {
     padding: 0;
-    position: relative;
+    
 }
 .hero-box-subject {
-    padding: 100px 20px 40px 20px;
-    
+    padding: 100px 20px 40px 20px;   
 }
 
 .box-title {
@@ -32,19 +31,17 @@
     }
 }
 
-
-@media screen and (min-width: 375px) {}
-    
-
 @media screen and (min-width: 768px) {
+    .container {
+            padding: 0;
+        }
     .hero-box-subject {
         padding: 122px 32px 50px 32px;
     }
 
     .box-title {
         font-size: 76px;
-        margin-bottom: 25px;
-        
+        margin-bottom: 25px;   
     }
 
     .box-text {
@@ -69,17 +66,15 @@
 @media screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
+        padding: 0;
     }
 
     .hero> .container {
-        display: flex;
-        align-self: flex-start;
-        
+        display: flex;  
     }
 
     .hero-box-subject {
-        padding: 238px 28px 50px 100px;
-        
+        padding: 238px 28px 50px 100px;   
     }
 
     .box-title {
@@ -90,14 +85,11 @@
 
     .box-text {
         max-width: 471px;
-    
     }
 
     .hero-box-back {
         background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url('../img/desktop/hero-des-1x.webp');
         width: 650px;
-        
-
     }
 
     @media screen and (min-resolution: 192dpi),
@@ -107,3 +99,6 @@
         }
     }
 }
+
+
+  
