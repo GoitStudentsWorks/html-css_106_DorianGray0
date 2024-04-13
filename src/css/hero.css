@@ -2,10 +2,11 @@
   min-width: 320px;
   background-color: var(--second-bgc);
 }
-.container {
+/* .container {
   padding: 0;
   position: relative;
-}
+} */
+
 .hero-box-subject {
   padding: 100px 20px 40px 20px;
 }
@@ -13,6 +14,12 @@
 .box-title {
   margin-bottom: 20px;
   line-height: 1;
+}
+
+@media screen and (max-width: 374px) {
+  .box-title {
+    font-size: 12.8vw;
+  }
 }
 
 .hero-box-back {
