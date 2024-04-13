@@ -1,4 +1,4 @@
-.reviews-container {
+.review {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -56,11 +56,21 @@
 
 .reviews-card-text {
     color: rgba(4, 3, 6, 0.4);
+    max-width: 288px;
+}
+
+/* media responsive  */
+@media screen and (max-width: 375px) {
+
+
+    .reviews-logo {
+        font-size: 12.8vw;
+    }
 }
 
 /* media table */
 @media screen and (min-width: 768px) {
-    .reviews-container {
+    .reviews {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -121,7 +131,7 @@
     }
 
     .reviews-card-item {
-        width: calc((100% - 18px)/3);
+        width: calc((100% - 25px)/3);
     }
 
 
