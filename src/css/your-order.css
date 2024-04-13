@@ -39,7 +39,7 @@
     margin-bottom: 15px;
 }
 
-form > .form-label:last-of-type {
+.order-form > .form-label:last-of-type {
 margin-bottom: 20px;
 }
 
@@ -220,7 +220,7 @@ background-color: #4C612E;
         padding-right: 38px;
     }
 
-    form>.form-label:last-of-type {
+    .order-form > .form-label:last-of-type {
         margin-bottom: 25px;
     }
 
@@ -272,7 +272,6 @@ background-color: #4C612E;
 
     .order-link-part {
         font-size: 32px;
-        /* margin-left: 12px; */
     }
 
     .order-link {
@@ -301,7 +300,6 @@ background-color: #4C612E;
         gap: 24px;
         padding-left: 0;
         padding-right: 0;
-        max-height: 534px;
     }
 
     .order-blok-form {
