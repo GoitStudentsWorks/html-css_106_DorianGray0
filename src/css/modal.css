@@ -1,0 +1,139 @@
+.backdrop-order {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  background-color: #576f359c;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  transition: opacity 250ms var(--cubic-regular) 550ms,
+    visibility 250ms var(--cubic-regular) 550ms;
+}
+
+.backdrop-order.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transition: opacity 250ms var(--cubic-regular),
+    visibility 250ms var(--cubic-regular);
+}
+
+.modal-order-blok-form {
+  position: absolute;
+  width: 335px;
+  max-height: 100vh;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -200%);
+
+  background-color: #fbfbfb;
+  border-radius: 30px;
+  padding: 20px 20px 40px;
+  overflow-y: auto;
+  transition: transform 450ms var(--cubic-regular) 250ms;
+}
+
+.backdrop-order.is-open > .modal-order-blok-form {
+  /* transform: translate(-50%, -200%); */
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 374px) {
+  .modal-order-blok-form {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-order-blok-form {
+    width: 628px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-order-blok-form {
+    width: 785px;
+    padding: 30px 40px 50px;
+  }
+
+  .modal-order-blok-form .form-label {
+    margin-bottom: 25px;
+  }
+}
+
+.order-close-modal {
+  margin-left: auto;
+  display: block;
+  padding: 0;
+  margin-bottom: 12px;
+
+  line-height: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+
+  outline: transparent;
+  transition: background-color 250ms var(--cubic-regular),
+    transform 250ms var(--cubic-regular);
+}
+
+.order-close-modal:hover,
+.order-close-modal:focus,
+.order-close-modal:active {
+  background-color: var(--second-bgc);
+}
+
+.order-close-modal:active {
+  transform: scale(0.9);
+}
+
+.order-close-modal > .icon-close-modal {
+  stroke: var(--accent-color);
+  fill: transparent;
+
+  transition: stroke 250ms var(--cubic-regular), fill 250ms var(--cubic-regular);
+}
+
+.order-close-modal:hover > .icon-close-modal,
+.order-close-modal:focus > .icon-close-modal {
+  stroke: var(--primary-text-color);
+  fill: transparent;
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 768px) {
+  .order-close-modal {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .order-close-modal {
+    margin-bottom: 30px;
+  }
+}
+
+.order-form-subtitle {
+}
+.order-part-one {
+}
+.order-part-two {
+}
+.order-form {
+}
+.form-label {
+}
+.order-input {
+}
+.text {
+}
+.order-form-area {
+}
+.order-btn {
+}

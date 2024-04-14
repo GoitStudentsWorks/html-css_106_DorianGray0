@@ -18,6 +18,7 @@
 @import url('./reviews.css');
 @import url('./your-order.css');
 @import url('./footer.css');
+@import url('./modal.css');
 
 :root {
   --primary-title-color: #fbfbfb;
