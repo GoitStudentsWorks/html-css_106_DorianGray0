@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 768px) {
   .container-second {
-    max-width: 736px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -57,6 +57,8 @@
 
 @media screen and (min-width: 1280px) {
   .container-second {
-    max-width: 1080px;
+    max-width: 1144px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
