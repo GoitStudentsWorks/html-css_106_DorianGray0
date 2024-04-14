@@ -94,7 +94,7 @@
       url(../img/desktop/hero-des-1x.webp);
     background-position: right;
     /* background-size: 52.6% 100%; */
-    background-size: 650px 800px;
+    background-size: 640px 800px;
   }
 
   @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
