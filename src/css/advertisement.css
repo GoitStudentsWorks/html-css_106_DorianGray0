@@ -7,6 +7,12 @@
   color: #141414;
 }
 
+@media screen and (max-width: 374px) {
+  .adver-text {
+    font-size: 12.8vw;
+  }
+}
+
 .span-adver {
   color: #fbfbfb;
   border-radius: 12px;
