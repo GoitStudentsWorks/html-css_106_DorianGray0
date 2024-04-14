@@ -23,7 +23,7 @@
       </ul>
     </nav>
 
-    <button type="button" class="header-burger-menu">
+    <button type="button" class="header-burger-menu" data-modal-open>
       <svg class="header-burger-icon" width="32" height="32">
         <use href="./img/icons.svg#icon-burger-menu-mob"></use>
       </svg>
@@ -32,10 +32,10 @@
     <button class="header-order-menu" type="button">Shop now</button>
   </div>
 
-  <div class="backdrop is-hidden">
+  <div class="backdrop is-hidden" data-modal>
     <div class="mob-menu">
       <div class="mob-menu-wrap">
-        <button class="close-modal">
+        <button class="close-modal" data-modal-close>
           <svg class="icon-close-modal" width="32" height="32">
             <use href="./img/icons.svg#icon-close-mob"></use>
           </svg>
@@ -44,13 +44,13 @@
         <nav class="mob-menu-nav">
           <ul class="mob-menu-list">
             <li class="mob-menu-item">
-              <a href="" class="header-nav-link">How It Works</a>
+              <a href="#explanation" class="header-nav-link">How It Works</a>
             </li>
             <li class="mob-menu-item">
-              <a href="" class="header-nav-link">Vegetables</a>
+              <a href="#products" class="header-nav-link">Vegetables</a>
             </li>
             <li class="mob-menu-item">
-              <a href="" class="header-nav-link">Reviews</a>
+              <a href="#comments" class="header-nav-link">Reviews</a>
             </li>
           </ul>
         </nav>

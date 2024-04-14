@@ -1,0 +1,45 @@
+<div class="backdrop-order">
+  <div class="modal-order-blok-form">
+    <button class="order-close-modal" data-modal-close>
+      <svg class="icon-close-modal" width="26" height="26">
+        <use href="./img/icons.svg#icon-close-mob"></use>
+      </svg>
+    </button>
+    <h3 class="order-form-subtitle">
+      Ordering <span class="order-part-one">from us</span> is quick and easy!
+      Fill out <span class="order-part-two">the form</span> below and we will
+      contact you !
+    </h3>
+    <form name="order-product" autocomplete="off" class="order-form">
+      <label class="form-label">
+        <input
+          type="text"
+          name="user-name"
+          placeholder="Full Name"
+          required
+          autocomplete="on"
+          class="order-input text"
+        />
+      </label>
+      <label class="form-label">
+        <input
+          type="email"
+          name="user-email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          autocomplete="on"
+          class="order-input text"
+        />
+      </label>
+      <label class="form-label">
+        <textarea
+          name="user-comment"
+          placeholder="Comment"
+          class="order-form-area text"
+        ></textarea>
+      </label>
+      <button type="submit" class="order-btn text">Send</button>
+    </form>
+  </div>
+</div>

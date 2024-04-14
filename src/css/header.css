@@ -93,11 +93,10 @@
   background: linear-gradient(rgba(20, 20, 20, 0.4), rgba(20, 20, 20, 0.4));
 
   transform: translate(0);
-  transition: visibility 250ms var(--cubic-regular),
-    transform 450ms var(--cubic-regular);
+  transition: transform 450ms var(--cubic-regular);
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   transform: translate(100%);
 }
 
@@ -196,12 +195,14 @@
   border: none;
   cursor: pointer;
 
-  transition: color 250ms var(--cubic-regular);
+  transition: color 250ms var(--cubic-regular),
+    outline 250ms var(--cubic-regular);
 }
 
 .mob-order-menu:hover,
 .mob-order-menu:focus {
   color: rgba(122, 49, 69, 0.7);
+  outline-color: rgba(122, 49, 69, 0.7);
 }
 
 @media screen and (min-width: 768px) {
@@ -226,9 +227,34 @@
     width: 40px;
   }
 
+  .backdrop {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    transition: visibility 350ms var(--cubic-regular),
+      opacity 350ms var(--cubic-regular);
+  }
+
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition: visibility 350ms var(--cubic-regular) 450ms,
+      opacity 350ms var(--cubic-regular) 450ms;
+  }
+
   .mob-menu {
     max-width: 351px;
     margin-left: auto;
+    transform: translate(0);
+
+    transition: transform 450ms var(--cubic-regular) 350ms;
+  }
+
+  .backdrop.is-hidden > .mob-menu {
+    transform: translate(100%);
   }
 
   .close-modal {
