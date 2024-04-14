@@ -23,10 +23,11 @@
   align-items: center;
 
   transition: transform 250ms var(--cubic-regular);
+  outline: transparent;
 }
 
 .header-logo-link:hover,
-.header-logo-link:hover {
+.header-logo-link:focus {
   transform: scale(1.1);
 }
 
