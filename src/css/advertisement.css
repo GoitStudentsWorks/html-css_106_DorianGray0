@@ -1,0 +1,38 @@
+.adver-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.adver-text {
+  color: #141414;
+}
+
+.span-adver {
+  color: #fbfbfb;
+  border-radius: 12px;
+
+  background: #576f35;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .adver-section {
+    padding: 100px 0;
+  }
+
+  .adver-text {
+    font-size: 64px;
+    line-height: 1.09;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .adver-text {
+    font-size: 76px;
+    line-height: 1.05;
+  }
+
+  .span-adver {
+    display: inline-block;
+  }
+}
