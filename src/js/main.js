@@ -46,8 +46,8 @@
         link.addEventListener('click', function (e) {
           e.preventDefault();
           const currentTarget = this.getAttribute('href');
-          refs.mobilemenu.classList.contains('is-open')
-            ? refs.mobilemenu.classList.remove('is-open')
+          !refs.modal.classList.contains('is-hidden')
+            ? refs.modal.classList.remove('is-hidden')
             : null;
           smoothScroll(currentTarget, 1000);
         });
