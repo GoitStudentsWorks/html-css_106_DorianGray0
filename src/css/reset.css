@@ -4,6 +4,7 @@ body {
   color: var(--primary-text-color);
 
   background-color: #fbfbfb;
+  overflow-x: hidden;
 }
 
 h1,
