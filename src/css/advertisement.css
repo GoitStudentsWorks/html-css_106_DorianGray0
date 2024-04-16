@@ -15,10 +15,21 @@
 
 .span-adver {
   color: #fbfbfb;
-  border-radius: 12px;
-
-  background: #576f35;
+  position: relative;
   display: block;
+}
+
+.span-adver::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: calc(100% + 20px);
+  height: 102px;
+  border-radius: 12px;
+  background: var(--second-bgc);
 }
 
 @media screen and (min-width: 768px) {
@@ -30,6 +41,11 @@
     font-size: 64px;
     line-height: 1.09;
   }
+
+  .span-adver::before {
+    width: calc(100% + 32px);
+    height: 86px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -40,5 +56,9 @@
 
   .span-adver {
     display: inline-block;
+  }
+
+  .span-adver::before {
+    width: calc(100% + 26px);
   }
 }
