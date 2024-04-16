@@ -47,7 +47,7 @@
           e.preventDefault();
           const currentTarget = this.getAttribute('href');
           !refs.modal.classList.contains('is-hidden')
-            ? refs.modal.classList.remove('is-hidden')
+            ? refs.modal.classList.add('is-hidden')
             : null;
           smoothScroll(currentTarget, 1000);
         });
